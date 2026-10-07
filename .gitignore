@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Raw dataset images are large: keep them out of git (see data/README.md)
+data/raw/*
+!data/raw/.gitkeep
+
+# Generated data and runtime state
+data/processed/*
+!data/processed/.gitkeep
+data/profile.json
+data/events.sqlite3
+data/*.sqlite3
+
+# MediaPipe model (downloaded with `python -m hgr.download_model`)
+saved_models/hand_landmarker.task
+
+# Trained PyTorch checkpoints are reproducible; the exported .onnx IS committed (< 5 MB)
+*.pt
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

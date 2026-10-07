@@ -1,0 +1,9 @@
+* text=auto
+*.onnx binary
+*.npz binary
+*.pt binary
+*.task binary
+*.png binary
+*.jpg binary
+*.ps1 text eol=crlf
+*.bat text eol=crlf
